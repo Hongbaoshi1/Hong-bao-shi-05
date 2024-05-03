@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding:0;    
+            background-color:#192d3b;
+        }
+        .login-container {
+            position: absolute;
+            top: 300px;
+            width: 300px;
+            padding: 40px;
+            border: 1px solid #ccc;
+            background-color:#45121e ;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            
+        }
+        .login-container h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color:#123345;
+            color:green;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+  header {
+
+position: fixed;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+z-index: 2;
+
+background-color: rgb(57, 100, 102);
+
+width: 100%;
+
+height: 50px;
+
+}
+
+nav a{
+
+text-decoration: none;
+
+color: black;
+
+font-size: 1.75rem;
+
+padding: 10px;
+
+border-radius: 20px;
+
+}
+
+nav a:hover{
+
+background-color: rgb(46, 82, 83);
+
+}      
+    </style>
+</head>
+<body>
+                  <header>
+                 <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                </nav> 
+                </header> 
+   <div class="container">
+<div class="login-container"> //Code mo dito!
+</div>
+</div>
+    <div class="login-container">
+        <h2>LOGIN</h2>
+        <form id="loginform" action="https://www.tiktok.com"method="GET">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="SIGN IN">
+        </form>
+    </div>
+</body>
+</html>
